@@ -13,6 +13,7 @@ def devolver_juegos(request):
 	respuesta_final = []
 	for fila_sql in lista:
 		diccionario = {}
+		diccionario['id'] = fila_sql.id
 		diccionario['nombre'] = fila_sql.nombre
 		diccionario['url_imagen'] = fila_sql.url_imagen
 		diccionario['año_salida'] = fila_sql.año_salida
